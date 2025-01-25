@@ -1,0 +1,320 @@
+/* header*/
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+#image{
+    background-color: #e4f9f5;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+ 
+}
+
+.cloud-one{
+    height: 50px;
+    width: 70px;
+    padding-bottom: 20%;
+    position: absolute;
+    top: 15px;
+    left: 70%;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    font-family: "Sacramento", cursive;
+    font-size: 3rem;
+    margin: 0%;
+    padding-top: 40px;
+    color: #727A79;
+    position: relative;
+}
+
+.pro{
+   padding-bottom: 30px;
+}
+
+.cloud-two{
+    height: 50px;
+    width: 70px;
+    padding-left: 20%;
+    padding-top: 30px;
+  
+}
+
+.mountain{
+    padding-top: 10%;
+    height: 100px;
+    width: 100%;
+}
+
+/* this is the part after header*/
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.myimg{
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.hola{
+    color: #727A79;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    font-family: "Sacramento", cursive;
+}
+
+.text{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+hr{
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 6%;
+    margin: 100px auto;
+} 
+
+/* from here is the skills part of the */
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    " title title"
+    " maths nerd"
+    ;
+    padding-bottom: 30px;
+}
+
+.title{
+    grid-area: title;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    color: #727A79;
+    font-family: "Sacramento", cursive;
+}
+
+.Maths{
+    grid-area: maths;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.nerd{
+    grid-area: nerd;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.glasses-nerd{
+    height: 200px;
+    border-radius: 20px;
+}
+
+.catto{
+    height: 200px;
+    border-radius: 20px;
+}
+
+h3{
+    color: #212a28;
+    font-size: large;
+}
+
+.coder{
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 756px){
+    .skills{
+        grid-template-columns: 1fr  ;
+        grid-template-areas: 
+        " title "
+        " maths "
+        " nerd "
+        ;
+    }
+   .Maths{
+        margin-top: 40px ;
+    }
+    .nerd{
+        margin-top: 10%;
+    }
+}
+
+
+
+/* this is the project part*/
+
+.img-one{
+    height: 150px;
+    border-radius: 20px;
+    transition: transform 0.4s ease, opacity 0.4s ease; 
+    opacity: 1; 
+}
+
+ .img-one:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+.img-two{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    transition: transform 0.4s ease, opacity 0.4s ease; 
+    opacity: 1; 
+}
+.img-two:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+.img-three{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    transition: transform 0.4s ease, opacity 0.4s ease; 
+    opacity: 1; 
+}
+.img-three:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+
+
+.my-projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    " title title title"
+    " p1 p2 p3"
+    ;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+@media only screen and (max-width: 800px){
+    .my-projects{
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        " title "
+        " p1 "
+        " p2 "
+        " p3 "
+        ;
+    }
+}
+
+.project-title{
+    grid-area: title;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    color: #727A79;
+    font-family: "Sacramento", cursive;
+}
+.project-1{
+    grid-area: p1;
+    text-align: center;
+    padding: 10%;
+}
+.project-2{
+    grid-area: p2;
+    text-align: center;
+    padding: 10%;
+}
+.project-3{
+    grid-area: p3;
+    text-align: center;
+    padding: 10%;
+} 
+
+.coders{
+    padding-top: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+/* this is the contant me part */
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.message{
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.contact{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    color: #727A79;
+    font-family: "Sacramento", cursive;
+  
+}
+
+.btn{
+    border: 1px solid #727A79;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e4f9f5;
+    border-radius: 20px;
+    transition: transform 0.4s ease, opacity 0.4s ease; 
+    opacity: 1; 
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+.tag{
+    text-decoration: none;
+    color: #727A79;
+
+}
+
+/* footer section */
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color:  #e4f9f5;
+    padding: 5%;
+}
